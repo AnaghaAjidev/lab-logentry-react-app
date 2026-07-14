@@ -71,13 +71,20 @@ const AddEntry = () => {
 
                     <div className="col-md-6">
                         <label>Department</label>
-                        <input
-                            type="text"
-                            className="form-control"
+                        <select
+                            className="form-select"
                             name="dept"
                             value={input.dept}
                             onChange={inputHandler}
-                        />
+                        >
+                            <option value="">Select Department</option>
+                            <option value="MCA">MCA</option>
+                            <option value="MBA">MBA</option>
+                            <option value="ECE">ECE</option>
+                            <option value="ME">ME</option>
+                            <option value="CSE">CSE</option>
+                            <option value="IT">IT</option>
+                        </select>
                     </div>
 
                     <div className="col-md-6">
@@ -93,13 +100,19 @@ const AddEntry = () => {
 
                     <div className="col-md-6">
                         <label>Course</label>
-                        <input
-                            type="text"
-                            className="form-control"
+                        <select
+                            className="form-select"
                             name="course"
                             value={input.course}
                             onChange={inputHandler}
-                        />
+                        >
+                            <option value="">Select Course</option>
+                            <option value="Python">Python</option>
+                            <option value="Java">Java</option>
+                            <option value="Data Structures">Data Structures</option>
+                            <option value="DBMS">DBMS</option>
+                            <option value="Machine Learning">Machine Learning</option>
+                        </select>
                     </div>
 
                     <div className="col-md-6">
